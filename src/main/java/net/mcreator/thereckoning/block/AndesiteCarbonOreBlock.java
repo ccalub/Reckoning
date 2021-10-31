@@ -43,11 +43,11 @@ import java.util.List;
 import java.util.Collections;
 
 @ThereckoningModElements.ModElement.Tag
-public class ZincOreBlock extends ThereckoningModElements.ModElement {
-	@ObjectHolder("thereckoning:zinc_ore")
+public class AndesiteCarbonOreBlock extends ThereckoningModElements.ModElement {
+	@ObjectHolder("thereckoning:andesite_carbon_ore")
 	public static final Block block = null;
-	public ZincOreBlock(ThereckoningModElements instance) {
-		super(instance, 6);
+	public AndesiteCarbonOreBlock(ThereckoningModElements instance) {
+		super(instance, 15);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}
@@ -60,9 +60,9 @@ public class ZincOreBlock extends ThereckoningModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0).harvestLevel(2)
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1.2f, 10f).setLightLevel(s -> 0).harvestLevel(2)
 					.harvestTool(ToolType.PICKAXE).setRequiresTool());
-			setRegistryName("zinc_ore");
+			setRegistryName("andesite_carbon_ore");
 		}
 
 		@Override
@@ -86,7 +86,7 @@ public class ZincOreBlock extends ThereckoningModElements.ModElement {
 		static final com.mojang.serialization.Codec<CustomRuleTest> codec = com.mojang.serialization.Codec.unit(() -> INSTANCE);
 		public boolean test(BlockState blockAt, Random random) {
 			boolean blockCriteria = false;
-			if (blockAt.getBlock() == Blocks.STONE)
+			if (blockAt.getBlock() == Blocks.ANDESITE)
 				blockCriteria = true;
 			return blockCriteria;
 		}
@@ -99,7 +99,8 @@ public class ZincOreBlock extends ThereckoningModElements.ModElement {
 	private static class FeatureRegisterHandler {
 		@SubscribeEvent
 		public void registerFeature(RegistryEvent.Register<Feature<?>> event) {
-			CUSTOM_MATCH = Registry.register(Registry.RULE_TEST, new ResourceLocation("thereckoning:zinc_ore_match"), () -> CustomRuleTest.codec);
+			CUSTOM_MATCH = Registry.register(Registry.RULE_TEST, new ResourceLocation("thereckoning:andesite_carbon_ore_match"),
+					() -> CustomRuleTest.codec);
 			feature = new OreFeature(OreFeatureConfig.CODEC) {
 				@Override
 				public boolean generate(ISeedReader world, ChunkGenerator generator, Random rand, BlockPos pos, OreFeatureConfig config) {
@@ -112,10 +113,10 @@ public class ZincOreBlock extends ThereckoningModElements.ModElement {
 					return super.generate(world, generator, rand, pos, config);
 				}
 			};
-			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 12)).range(45)
-					.square().func_242731_b(7);
-			event.getRegistry().register(feature.setRegistryName("zinc_ore"));
-			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("thereckoning:zinc_ore"), configuredFeature);
+			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 10)).range(64)
+					.square().func_242731_b(10);
+			event.getRegistry().register(feature.setRegistryName("andesite_carbon_ore"));
+			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("thereckoning:andesite_carbon_ore"), configuredFeature);
 		}
 	}
 	@SubscribeEvent

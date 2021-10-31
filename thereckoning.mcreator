@@ -5,7 +5,7 @@
       "name": "ReckoningResources",
       "type": "tab",
       "sortid": 1,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "reckoning_resources",
@@ -70,6 +70,46 @@
       "ids": {},
       "registry_name": "tin_ore",
       "path": "~/Blocks"
+    },
+    {
+      "name": "AndesiteCopperOre",
+      "type": "block",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "andesite_copper_ore",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "AndesiteLeadOre",
+      "type": "block",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "andesite_lead_ore",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "AndesiteCarbonOre",
+      "type": "block",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "andesite_carbon_ore",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "AndesiteTitaniumOre",
+      "type": "block",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "andesite_titanium_ore",
+      "path": "~/Blocks"
     }
   ],
   "variable_elements": [],
@@ -78,11 +118,15 @@
     "en_us": {
       "block.thereckoning.copper_ore": "Copper Ore",
       "block.thereckoning.carbon_ore": "Carbon Ore",
+      "block.thereckoning.andesite_lead_ore": "Andesite Lead Ore",
       "block.thereckoning.titanium_ore": "Titanium Ore",
       "block.thereckoning.tin_ore": "Tin Ore",
+      "block.thereckoning.andesite_copper_ore": "Andesite Copper Ore",
       "itemGroup.tabreckoning_resources": "The Reckoning Resources",
       "block.thereckoning.zinc_ore": "Zinc Ore",
-      "block.thereckoning.lead_ore": "Lead Ore"
+      "block.thereckoning.lead_ore": "Lead Ore",
+      "block.thereckoning.andesite_carbon_ore": "Andesite Carbon Ore",
+      "block.thereckoning.andesite_titanium_ore": "Andesite Titanium Ore"
     }
   },
   "foldersRoot": {

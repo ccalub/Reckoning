@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "thereckoning:blocks/andesite_carbon_ore_2",
+    "particle": "thereckoning:blocks/andesite_carbon_ore_2"
+  }
+}

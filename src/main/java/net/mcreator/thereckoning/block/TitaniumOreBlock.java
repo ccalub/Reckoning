@@ -113,7 +113,7 @@ public class TitaniumOreBlock extends ThereckoningModElements.ModElement {
 				}
 			};
 			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 10)).range(44)
-					.square().func_242731_b(12);
+					.square().func_242731_b(6);
 			event.getRegistry().register(feature.setRegistryName("titanium_ore"));
 			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("thereckoning:titanium_ore"), configuredFeature);
 		}

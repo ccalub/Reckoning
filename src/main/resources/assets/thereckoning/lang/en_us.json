@@ -1,9 +1,13 @@
 {
   "block.thereckoning.copper_ore": "Copper Ore",
   "block.thereckoning.carbon_ore": "Carbon Ore",
+  "block.thereckoning.andesite_lead_ore": "Andesite Lead Ore",
   "block.thereckoning.titanium_ore": "Titanium Ore",
   "block.thereckoning.tin_ore": "Tin Ore",
+  "block.thereckoning.andesite_copper_ore": "Andesite Copper Ore",
   "itemGroup.tabreckoning_resources": "The Reckoning Resources",
   "block.thereckoning.zinc_ore": "Zinc Ore",
-  "block.thereckoning.lead_ore": "Lead Ore"
+  "block.thereckoning.lead_ore": "Lead Ore",
+  "block.thereckoning.andesite_carbon_ore": "Andesite Carbon Ore",
+  "block.thereckoning.andesite_titanium_ore": "Andesite Titanium Ore"
 }

@@ -113,7 +113,7 @@ public class CopperOreBlock extends ThereckoningModElements.ModElement {
 				}
 			};
 			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 15)).range(64)
-					.square().func_242731_b(12);
+					.square().func_242731_b(8);
 			event.getRegistry().register(feature.setRegistryName("copper_ore"));
 			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("thereckoning:copper_ore"), configuredFeature);
 		}

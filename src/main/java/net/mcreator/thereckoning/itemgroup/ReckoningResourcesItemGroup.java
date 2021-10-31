@@ -7,7 +7,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 
-import net.mcreator.thereckoning.item.CopperIngotItem;
+import net.mcreator.thereckoning.block.CopperOreBlock;
 import net.mcreator.thereckoning.ThereckoningModElements;
 
 @ThereckoningModElements.ModElement.Tag
@@ -22,7 +22,7 @@ public class ReckoningResourcesItemGroup extends ThereckoningModElements.ModElem
 			@OnlyIn(Dist.CLIENT)
 			@Override
 			public ItemStack createIcon() {
-				return new ItemStack(CopperIngotItem.block);
+				return new ItemStack(CopperOreBlock.block);
 			}
 
 			@OnlyIn(Dist.CLIENT)
