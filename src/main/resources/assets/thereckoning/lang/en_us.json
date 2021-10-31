@@ -1,5 +1,9 @@
 {
   "block.thereckoning.copper_ore": "Copper Ore",
+  "block.thereckoning.carbon_ore": "Carbon Ore",
+  "block.thereckoning.titanium_ore": "Titanium Ore",
+  "block.thereckoning.tin_ore": "Tin Ore",
   "itemGroup.tabreckoning_resources": "The Reckoning Resources",
+  "block.thereckoning.zinc_ore": "Zinc Ore",
   "block.thereckoning.lead_ore": "Lead Ore"
 }

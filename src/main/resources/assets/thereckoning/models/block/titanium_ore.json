@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "thereckoning:blocks/titanium_ore",
+    "particle": "thereckoning:blocks/titanium_ore"
+  }
+}

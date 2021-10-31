@@ -4,7 +4,7 @@
   "definition": {
     "name": "The Reckoning Resources",
     "icon": {
-      "value": "Blocks.AIR"
+      "value": "CUSTOM:CopperIngot"
     },
     "showSearch": false
   }

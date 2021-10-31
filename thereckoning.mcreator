@@ -5,7 +5,7 @@
       "name": "ReckoningResources",
       "type": "tab",
       "sortid": 1,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "reckoning_resources",
@@ -30,6 +30,46 @@
       "ids": {},
       "registry_name": "lead_ore",
       "path": "~/Blocks"
+    },
+    {
+      "name": "CarbonOre",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "carbon_ore",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "TitaniumOre",
+      "type": "block",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "titanium_ore",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "ZincOre",
+      "type": "block",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "zinc_ore",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "TinOre",
+      "type": "block",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tin_ore",
+      "path": "~/Blocks"
     }
   ],
   "variable_elements": [],
@@ -37,7 +77,11 @@
   "language_map": {
     "en_us": {
       "block.thereckoning.copper_ore": "Copper Ore",
+      "block.thereckoning.carbon_ore": "Carbon Ore",
+      "block.thereckoning.titanium_ore": "Titanium Ore",
+      "block.thereckoning.tin_ore": "Tin Ore",
       "itemGroup.tabreckoning_resources": "The Reckoning Resources",
+      "block.thereckoning.zinc_ore": "Zinc Ore",
       "block.thereckoning.lead_ore": "Lead Ore"
     }
   },
@@ -81,7 +125,7 @@
         "children": []
       },
       {
-        "name": "Recipes",
+        "name": "Recipe",
         "children": []
       },
       {
