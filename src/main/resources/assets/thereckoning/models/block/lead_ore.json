@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "thereckoning:blocks/lead_ore",
+    "particle": "thereckoning:blocks/lead_ore"
+  }
+}

@@ -1,10 +1,45 @@
 {
   "id_map": {},
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "ReckoningResources",
+      "type": "tab",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "reckoning_resources",
+      "path": "~/Misc."
+    },
+    {
+      "name": "CopperOre",
+      "type": "block",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "copper_ore",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "LeadOre",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lead_ore",
+      "path": "~/Blocks"
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "block.thereckoning.copper_ore": "Copper Ore",
+      "itemGroup.tabreckoning_resources": "The Reckoning Resources",
+      "block.thereckoning.lead_ore": "Lead Ore"
+    }
   },
   "foldersRoot": {
     "name": "~",
